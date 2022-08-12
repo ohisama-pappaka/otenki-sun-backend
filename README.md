@@ -1,1 +1,0 @@
-# otenki-sun-backend
