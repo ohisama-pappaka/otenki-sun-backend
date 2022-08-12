@@ -1,2 +1,5 @@
 fastapi==0.77.0
-requests
+uvicorn==0.18.2
+# requests
+# dotenv
+# datetime
