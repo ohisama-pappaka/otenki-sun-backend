@@ -1,11 +1,8 @@
 from fastapi import FastAPI
 from starlette.responses import FileResponse
 import cruds.city_data_file as city_data_file
-import cruds.weekly_data_set as weekly_data_set
 import cruds.hourly_data_set as hourly_data_set
-from dotenv import load_dotenv
-
-load_dotenv()
+import cruds.weekly_data_set as weekly_data_set
 
 app = FastAPI()
 favicon_path = "favicon.ico"
@@ -21,7 +18,7 @@ async def favicon():
     return FileResponse(favicon_path)
 
 
-@app.get("/city/{name}")  #
+@app.get("/city/{name}")
 def root(name: str):
     main_list = city_data_file.fetch_city_list(name)
     return main_list

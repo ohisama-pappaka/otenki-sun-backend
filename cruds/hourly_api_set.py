@@ -1,12 +1,10 @@
 import requests
 import datetime
 import cruds.city_data_file
-import os
-from dotenv import load_dotenv
+import config
 
-
-load_dotenv()
-API_KEY = os.environ["API_KEY"]
+# 環境変数の定義
+API_KEY = config.API_KEY
 
 
 def api_set(prefecture_name: str, city_name: str):
