@@ -1,0 +1,25 @@
+prefecture_db = {
+    "北海道": {
+        "稚内": {"id": "011000", "city_name": "Wakanai"},
+        "旭川": {"id": "012010", "city_name": "Asahikawa"},
+        "留萌": {"id": "012020", "city_name": "Rumoi"},
+        "札幌": {"id": "016010", "city_name": "Sapporo"},
+        "岩見沢": {"id": "016020", "city_name": "Iwamizawa"},
+        "倶知安": {"id": "016030", "city_name": "Kuttyan"},
+        "網走": {"id": "013010", "city_name": "Abashiri"},
+        "北見": {"id": "013020", "city_name": "Kitami"},
+        "紋別": {"id": "013030", "city_name": "Monbetsu"},
+        "根室": {"id": "014010", "city_name": "Nemuro"},
+        "釧路": {"id": "014020", "city_name": "Nemuro"},
+        "帯広": {"id": "014030", "city_name": "Obihiro"},
+        "室蘭": {"id": "015010", "city_name": "Muroran"},
+        "浦河": {"id": "015020", "city_name": "Urakawa"},
+        "函館": {"id": "017010", "city_name": "Hakodate"},
+        "江差": {"id": "017020", "city_name": "Esashi"},
+    },
+    "青森": {
+        "青森": {"id": "020010", "city_name": "Aomori"},
+        "むつ": {"id": "020020", "city_name": "Mutsu"},
+        "八戸": {"id": "020030", "city_name": "Yae"},
+    },
+}
