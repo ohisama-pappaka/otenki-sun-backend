@@ -1,5 +1,5 @@
-fastapi==0.77.0
-uvicorn==0.18.2
-# requests
-# dotenv
-# datetime
+fastapi
+uvicorn
+requests
+datetime
+python-dotenv
