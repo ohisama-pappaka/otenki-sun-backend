@@ -45,11 +45,11 @@ prefecture_db = {
         "小名浜": {"id": "070020", "city_name": "Onahama"},
         "若松": {"id": "070030", "city_name": "Wakamatsu"},
     },
-    "茨城": {
+    "茨城県": {
         "水戸": {"id": "080010", "city_name": "Mito"},
         "土浦": {"id": "080020", "city_name": "Tsutiura"},
     },
-    "栃木": {
+    "栃木県": {
         "宇都宮": {"id": "090010", "city_name": "Utsunomiya"},
         "大田原": {"id": "090020", "city_name": "Ootahara"},
     },
