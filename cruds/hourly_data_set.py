@@ -8,7 +8,7 @@ def data_set(prefecture_name: str, city_name: str):
         prefecture_name, city_name
     )
     output_data = []
-    for time_cnt in range(0, 48, 6):
+    for time_cnt in range(6, 48, 6):
         today_date = datetime.date.today()
         if (date.hour + time_cnt) > 24:
             day_after = today_date.day + 1
