@@ -1,10 +1,10 @@
 import datetime
-import cruds.hourly_api_set as hourly_api_set
+import cruds.dailynhourly_api_set as dailynhourly_api_set
 import cruds.day_precipitation as day_precipitation
 
 
 def data_set(prefecture_name: str, city_name: str):
-    precipitation_data, hourly_input_data, date = hourly_api_set.api_set(
+    precipitation_data, hourly_input_data, date = dailynhourly_api_set.api_set(
         prefecture_name, city_name
     )
     output_data = []
@@ -33,16 +33,16 @@ def data_set(prefecture_name: str, city_name: str):
 
         icon_url = f"http://openweathermap.org/img/w/{weather}.png"
 
-        hourly_data = [
-            time,
-            hours,
-            icon_url,
-            temperature,
-            humidity,
-            pre,
-        ]
-        # 日付、時刻（時のみ）、天候のアイコンURL、気温、湿度、降水確率で出力
+        hourly_data = {
+            "time": time,
+            "hour": hours,
+            "icon_url": icon_url,
+            "temperature": temperature,
+            "humidity": humidity,
+            "precipitation": pre,
+        }
 
+        # 日付、時刻（時のみ）、天候のアイコンURL、気温、湿度、降水確率で出力
         output_data.append(hourly_data)
 
     return output_data
