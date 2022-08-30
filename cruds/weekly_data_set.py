@@ -23,7 +23,13 @@ def data_set(prefecture_name: str, city_name: str):
         )  #  降水
         pre_sum = f"{rain_pre}%"
         icon_url = f"http://openweathermap.org/img/w/{icon_path}.png"
-        weekly_data = [week_time, icon_url, temp_max, temp_min, pre_sum]
+        weekly_data = {
+            "time": week_time,
+            "icon_url": icon_url,
+            "temperature_max": temp_max,
+            "temperature_min": temp_min,
+            "preparation": pre_sum,
+        }
 
         output_data.append(weekly_data)
 
