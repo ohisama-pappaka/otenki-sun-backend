@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import FileResponse
 import cruds.city_data_file as city_data_file
 import cruds.daily_data_set as daily_data_set
@@ -7,6 +8,14 @@ import cruds.weekly_data_set as weekly_data_set
 
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 favicon_path = "favicon.ico"
 
 
